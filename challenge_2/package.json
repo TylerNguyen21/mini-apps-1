@@ -1,0 +1,30 @@
+{
+  "name": "csv_report_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/worrierx0/hrsf108-mini-apps-1.git"
+  },
+  "keywords": [
+    "csv",
+    "report",
+    "geneator"
+  ],
+  "author": "Tyler Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/worrierx0/hrsf108-mini-apps-1/issues"
+  },
+  "homepage": "https://github.com/worrierx0/hrsf108-mini-apps-1#readme"
+}
