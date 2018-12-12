@@ -1,0 +1,12 @@
+table {
+    position: relative;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+    width: 100px;
+    height: auto;
+    background-color: rgb(124, 161, 241);
+}
+
