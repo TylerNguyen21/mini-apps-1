@@ -13,8 +13,8 @@
 <body>
     <h1>CSV REPORT GENERATOR</h1>
     <div>
-        <form id= 'csvSubmit' action="/" method="POST">
-            <textarea type="text" rows="6" cols="50" name="json" placeholder="add json object here!"></textarea>
+        <form id= 'csvSubmit' action="/" method="POST" enctype="multipart/form-data">
+            <input type='file' name='fileUpload' id='fileUpload'>
             <input type="submit" value="Submit">
         </form>
     </div>
