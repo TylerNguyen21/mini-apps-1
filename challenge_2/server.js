@@ -33,14 +33,13 @@ app.post('/', function(req, res) {
     }
     iterateThroughFile(parseObj);
     
-    converter.csvFileConverter(req.body, (err, result) => {
+    converter.csvFileConverter(fileArray, (err, result) => {
       if (err) {
           throw err;
       } else {
-          
+        res.send(result);   
       }
     });
-    res.send(req.body);
 })
 
 app.listen(port, function() {

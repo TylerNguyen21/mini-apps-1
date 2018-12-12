@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -13,8 +13,8 @@
 <body>
     <h1>CSV REPORT GENERATOR</h1>
     <div>
-        <form action="/" method="POST">
-            First Name, Last Name, county, city, role, sales: <textarea type="text" rows="6" cols="50" name="json" placeholder="Ex: Tyler, Nguyen, San Francisco, San Francisco, student, 1000000000"></textarea>
+        <form id= 'csvSubmit' action="/" method="POST">
+            <textarea type="text" rows="6" cols="50" name="json" placeholder="add json object here!"></textarea>
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -29,14 +29,6 @@
                 <th>sales</th>
             </thead>
             <tbody>
-                <tr>
-                    <td>Tyler</td>
-                    <td>Nguyen</td>
-                    <td>San Francisco</td>
-                    <td>San Francisco</td>
-                    <td>student</td>
-                    <td>1000000000</td>
-                </tr>
             </tbody>
         </table>
     </div>
