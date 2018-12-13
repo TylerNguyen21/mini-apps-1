@@ -1,4 +1,3 @@
-
 class App extends React.Component {
     constructor(props) {
         super(props)
@@ -10,6 +9,7 @@ class App extends React.Component {
     this.handleSubmitForm2 = this.handleSubmitForm2.bind(this);
     this.handleSubmitForm3 = this.handleSubmitForm3.bind(this);
     this.handleReturn = this.handleReturn.bind(this);
+    this.handlePostRequest = this.handlePostRequest.bind(this);
     }
  
     handleSubmitForm1(form1Info) {
@@ -42,6 +42,36 @@ class App extends React.Component {
         this.setState({
             form: 4,
             userInfo: this.state.userInfo.concat(newInfo)  
+        })
+
+        //////this.setState is async so setTime out makes sure this.state.userInfo is updated
+        setTimeout(() => {
+            this.handlePostRequest()
+        }, 0);
+      }
+      
+      handlePostRequest() {
+        fetch('/', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify({
+              name: this.state.userInfo[0],
+              email: this.state.userInfo[1],
+              password: this.state.userInfo[2],
+              address1: this.state.userInfo[3],
+              address2: this.state.userInfo[4],
+              city: this.state.userInfo[5],
+              state: this.state.userInfo[6],
+              zipcode: this.state.userInfo[7],
+              phoneNumber: this.state.userInfo[8],
+              creditCard: this.state.userInfo[9],
+              expirationDate: this.state.userInfo[10],
+              ccv: this.state.userInfo[11],
+              billingZipCode: this.state.userInfo[12],
+            })
         })
       }
 
