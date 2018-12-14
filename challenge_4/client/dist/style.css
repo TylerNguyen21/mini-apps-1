@@ -1,0 +1,24 @@
+.blue {
+    background-color: blue
+}
+
+.red {
+    background-color: red
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.playArea {
+    background-color: gray;
+    border: .05em solid black;
+}
+
+.boardrow {
+    border: .05em solid black;
+}
