@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
 const PORT = 3000;
-const db = require('./database/db.js');
+// const db = require('./database/db.js');
 const morgan = require('morang');
 
 
